@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Evaluation | WDMC NITJ</title>
+    <style>
+        /* Modern, subtle background */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            color: #333;
+        }
+
+        /* Initial fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Updated Card styling for two columns */
+        .card { 
+            background: white;
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            max-width: 900px; /* Increased width to fit two images comfortably */
+            width: 95%;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 { 
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        p.subtitle {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* --- THE TWO COLUMN GALLERY --- */
+        .showcase-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            gap: 25px; /* Space between the images */
+            margin: 30px 0;
+        }
+
+        .image-column {
+            text-align: center;
+        }
+
+        .image-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #34495e;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project-media {
+            overflow: hidden;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            position: relative;
+        }
+
+        img { 
+            max-width: 100%; 
+            display: block;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        /* Image interaction: Slight zoom on hover */
+        .project-media:hover img {
+            transform: scale(1.03);
+        }
+
+        /* --- STUDENT INFO SECTION --- */
+        .info { 
+            margin-top: 35px; 
+            text-align: left; 
+            background: #fdfdfd;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 6px solid #e73c7e; /* The pink from the PDF title */
+        }
+
+        h3 { 
+            margin-top: 0; 
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+        }
+
+        .detail-item {
+            margin: 12px 0;
+            font-size: 1.05rem;
+            color: #34495e;
+        }
+
+        .label {
+            color: #e73c7e;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .badge {
+            background: #e73c7e;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 class="subtitle">WDMC Project</h1>
+        <h1>AI Morphing Showcase</h1>
+        
+        <div class="showcase-container">
+            
+            <div class="image-column">
+                <p class="image-title">Initial Image</p>
+                <div class="project-media">
+                    <img src="66070dc9-e1e3-486c-9c28-075a3303d1fc.jpg" alt="Initial (Before) College Photo">
+                </div>
+            </div>
+            
+            <div class="image-column">
+                <p class="image-title">AI Morphed (After)</p>
+                <div class="project-media">
+                    <img src="Gemini_Generated_Image_h36b3zh36b3zh36b.jpg" alt="AI Morphed (After) College Event">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info">
+            <h3>Student Profile</h3>
+            <div class="detail-item">
+                <span class="label">Name:</span> Gursamar Singh
+            </div>
+            <div class="detail-item">
+                <span class="label">Roll No:</span> 25127014 <span class="badge">NITJ</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Branch:</span> Mathematics and Computing 
+            </div>
+            <div class="detail-item">
+                <span class="label">Project Description:</span> 
+                <p style="margin-top: 10px; line-height: 1.7; color: #555;">
+                    The transformation of a standard campus photo into an AI-enhanced visual asset from the <strong>Utkansh 2025</strong> cultural fest. This comparison showcases my ability to create dynamic web content using both traditional development skills and modern AI generative tools.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
